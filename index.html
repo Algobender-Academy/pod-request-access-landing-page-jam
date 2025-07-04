@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Nkosinathi Manu Dhanda" />
+    <meta
+      name="description"
+      content="This is a landing page for a Pod Request Access Page"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Pod Request Access</title>
+  </head>
+
+  <body>
+    <main class="pod-page">
+      <figure class="podpage__logo">
+        <img
+          src="./images/desktop/logo.svg"
+          alt="pod-logo"
+          width="135"
+          height="56"
+        />
+
+        <figcaption class="offscreen">pod-logo</figcaption>
+      </figure>
+
+      <article class="pod-page__content">
+        <h1 class="pod-page__title center">
+          <span>Publish your podcasts</span> everywhere.
+        </h1>
+
+        <p class="pod-page__description center">
+          Upload your audio to Pod with a single click. We’ll then distribute
+          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
+          and more!
+        </p>
+
+        <section class="pod-page__uno-reverse">
+          <section class="pod-page__social-icons">
+            <figure class="pod-page__social-icon">
+              <img
+                src="./images/desktop/spotify.svg"
+                alt="spotify"
+                width="96"
+                height="29"
+              />
+
+              <figcaption class="offscreen">spotify-icon</figcaption>
+            </figure>
+
+            <figure class="pod-page__social-icon">
+              <img
+                src="./images/desktop/apple-podcast.svg"
+                alt="apple-podcast"
+                width="78"
+                height="29"
+              />
+
+              <figcaption class="offscreen">apple-podcast-icon</figcaption>
+            </figure>
+
+            <figure class="pod-page__social-icon">
+              <img
+                src="./images/desktop/google-podcasts.svg"
+                alt="google-podcasts"
+                width="125"
+                height="18"
+              />
+
+              <figcaption class="offscreen">google-podcasts-icon</figcaption>
+            </figure>
+
+            <figure class="pod-page__social-icon">
+              <img
+                src="./images/desktop/pocket-casts.svg"
+                alt="pocket-casts"
+                width="129"
+                height="26"
+              />
+
+              <figcaption class="offscreen">pocket-casts-icon</figcaption>
+            </figure>
+          </section>
+
+          <form
+            action="httpbin.org/post"
+            method="post"
+            target="_blank"
+            id="accessForm"
+            class="access__form"
+          >
+            <div class="pod-page__email-input-wrapper">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email address"
+                class="pod-page__email-input"
+                required
+              />
+
+              <button class="pod-page__button" type="submit">
+                Request Access
+              </button>
+            </div>
+
+            <p class="js-submit-status-message"></p>
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <figure class="pod-page__dots responsive-image">
+      <img
+        src="./images/desktop/bg-pattern-dots.svg"
+        alt="bg-pattern-dots"
+        width="232"
+        height="104"
+      />
+
+      <figcaption class="offscreen">bg-pattern-dots</figcaption>
+    </figure>
+  </body>
+</html>

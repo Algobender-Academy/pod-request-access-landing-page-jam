@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || REST */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --GREEN: #54e6af;
+  --BLUE-950: #121725;
+  --BLUE-950-FILTER: hsla(224, 35%, 11%, 0.1);
+  --BLUE-900: #2c344b;
+  --BLUE-600: #5a668a;
+  --BLUE-300: #c2cbe5;
+  --WHITE: #fff;
+  --RED: #fb3e3e;
+
+  /* TYPOGRAPHY */
+  --FF: "Chivo", sans-serif;
+
+  /* TYPOGRAPHY-DSK */
+  --TEXT-PREST-1-DSK: 300 3rem/120% var(--FF);
+  --TEXT-PREST-2-DSK: 300 1.125rem/150% var(--FF);
+  --TEXT-PREST-3-DSK: bold 0.875rem/200% var(--FF);
+
+  /* TYPOGRAPHY-MOB */
+  --TEXT-PREST-1-MOB: 300 2rem/120% var(--FF);
+  --TEXT-PREST-2-MOB: 300 0.875rem/150% var(--FF);
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+.responsive-image {
+  display: none;
+}
+
+/* MOBILE FIRST DESIGN */
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: var(--BLUE-950);
+  background-image: url("./images/mobile/image-host-alt.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+/* || POD-PAGE */
+.pod-page {
+  display: flex;
+  flex-flow: column;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+/* ||  */
+.pod-page__content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.pod-page__title {
+  font: var(--TEXT-PREST-1-MOB);
+  color: var(--WHITE);
+  margin-bottom: 1rem;
+  max-width: 303px;
+}
+
+.pod-page__title span {
+  color: var(--GREEN);
+}
+
+.pod-page__description {
+  font: var(--TEXT-PREST-2-MOB);
+  color: var(--BLUE-300);
+  margin-bottom: 2.5rem;
+  max-width: 303px;
+}
+
+.pod-page__social-icons {
+  display: flex;
+  align-items: center;
+  width: 303px;
+  justify-content: space-between;
+  margin-bottom: 41.05px;
+}
+
+.pod-page__social-icon img[alt="spotify"] {
+  max-width: 55.94px;
+}
+
+.pod-page__social-icon img[alt="apple-podcast"] {
+  max-width: 45px;
+}
+
+.pod-page__social-icon img[alt="google-podcasts"] {
+  max-width: 72.97px;
+}
+
+.pod-page__social-icon img[alt="pocket-casts"] {
+  max-width: 75.88px;
+}
+
+.access__form {
+  display: flex;
+  justify-content: center;
+}
+
+.pod-page__email-input-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 303px;
+}
+
+.pod-page__email-input {
+  width: 100%;
+  border: none;
+  padding: 8px 8px 8px 32px;
+  background-color: var(--BLUE-900);
+  color: var(--WHITE);
+  font: var(--TEXT-PREST-3-DSK);
+  border-radius: 28px;
+}
+
+.pod-page__button {
+  background-color: var(--GREEN);
+  color: var(--BLUE-950);
+  box-shadow: 0px 2px 4px 0px hsla(157, 74%, 62%, 0.14);
+  padding: 0px 32px;
+  font: var(--TEXT-PREST-3-DSK);
+  line-height: 2.75rem;
+  border: none;
+  border-radius: 28px;
+  width: 100%;
+}
