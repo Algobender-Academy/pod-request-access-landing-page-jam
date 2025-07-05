@@ -18,7 +18,6 @@ img {
   /* COLORS */
   --GREEN: #54e6af;
   --BLUE-950: #121725;
-  --BLUE-950-FILTER: hsla(224, 35%, 11%, 0.1);
   --BLUE-900: #2c344b;
   --BLUE-600: #5a668a;
   --BLUE-300: #c2cbe5;
@@ -95,7 +94,7 @@ h2 {
   align-items: center;
 }
 
-/* ||  */
+/* || PAGE-CONTENT */
 .pod-page__content {
   display: flex;
   flex-flow: column;
@@ -107,6 +106,7 @@ h2 {
   color: var(--WHITE);
   margin-bottom: 1rem;
   max-width: 303px;
+  text-transform: uppercase;
 }
 
 .pod-page__title span {
@@ -184,12 +184,4 @@ h2 {
 
 .js-submit-status-message {
   font: var(--STATUS-MESSAGE);
-}
-
-/* || Tablet */
-@media screen and (min-width: 768px) {
-}
-
-/* || Desktop */
-@media screen and (min-width: 992px) {
 }
