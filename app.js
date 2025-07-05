@@ -3,11 +3,6 @@ if (document.querySelector(".access__form")) {
   const emailInput = document.querySelector(".pod-page__email-input");
 
   function validateEmail(email) {
-    // Check if email is a string
-    if (typeof email !== "string") {
-      return "Email must be a string";
-    }
-
     const atIndex = email.indexOf("@");
     const lastAtIndex = email.lastIndexOf("@");
     const dotIndex = email.lastIndexOf(".");
